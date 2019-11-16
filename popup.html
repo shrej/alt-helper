@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Alt Helper Extension's Popup</title>
+    <style type="text/css">
+      h1 {
+        text-align: center;
+        color: #009ddc;
+      }
+      #text-container {
+        margin: 10px;
+        padding: 10px;
+      }
+      #predict {
+        border: 1px solid #009ddc;
+        border-radius: 4px;
+        color: #009ddc;
+        flex-shrink: 0;
+        cursor: pointer;
+        height: 40px;
+        margin: 0;
+        padding: 8px 16px;
+        text-decoration: none;
+        text-transform: none;
+        margin: 10px;
+        padding: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Predict Image Labels</h1>
+    <div id="root" class="root">
+      <div id="text-container">
+        <div>
+          Select a Model to use
+          <select id="selectedModel">
+            <option value="GeneralImageClassifier">
+              General Image Classification Model
+            </option>
+            <option value="SceneClassifier">Scene Image Model</option>
+            <option value="FoodImageClassifier">Food Image Model</option>
+            <option value="MultiLabelImageClassifier">
+              Multi-Label Image Model
+            </option>
+          </select>
+        </div>
+        <button id="predict">Label Images</button>
+      </div>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>
